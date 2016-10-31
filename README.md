@@ -7,7 +7,7 @@ var terminal = require('./node-inout.js'); // If placed in same directory as scr
 ## Setup Async Reading 
 Currently only type available
 ```javascript
-var reader = new readInputAsync(); //Initiates readline module and emits event on receipt of a line
+var reader = new terminal(); //Initiates readline module and emits event on receipt of a line
 ```
 ####Listen for 'In' event
 <p>structure : object.on('in',function(callback){}); </p>
