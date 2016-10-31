@@ -9,14 +9,14 @@ Currently only type available
 ```javascript
 var reader = new terminal(); //Initiates readline module and emits event on receipt of a line
 ```
-####Listen for 'In' event
+##Listen for 'In' event
 <p>structure : object.on('in',function(callback){}); </p>
 ```javascript
 reader.on('in',function(data){
   console.log("stdin-> " + data) ; //Here you can do pretty much anything with the received input
 });
 ```
-####Send data to the terminal (stdout)
+##Send data to the terminal (stdout)
 structure : object.emit('out',data,newline) ; 
 ```javascript
 //If you want to send and go to the next line use
@@ -27,3 +27,6 @@ structure : object.emit('out',data,newline) ;
   reader.emit('out','Hello World') ; 
 ```
 That's it! Now you have an event based console input and output. 
+
+####Depedencies
+Uses nodejs native 'events' and 'process' modules
