@@ -1,5 +1,9 @@
 # node-inout
 A simple terminal input and output via stdin and stdout using event emitters as transport for the data
+##Install
+```
+npm install node-inout
+```
 ## Setup
 ```javascript
 var terminal = require('./node-inout.js'); // If placed in same directory as script you want to use it in
@@ -26,7 +30,7 @@ structure : object.emit('out',data,newline) ;
     //or the newline argument can be omitted. 
   reader.emit('out','Hello World') ; 
 ```
-That's it! Now you have an event based console input and output. 
+That's it! Now you have an event based console/terminal input and output. 
 
 ####Depedencies
 Uses nodejs native 'events' and 'process' modules
